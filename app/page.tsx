@@ -145,14 +145,6 @@ export default function Home() {
               >
                 @moderateur1labo
               </a>
-              <a 
-                href="https://t.me/moderateur2_lelabo" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm text-slate-300 hover:text-sky-400 transition-colors font-mono"
-              >
-                @moderateur2_lelabo
-              </a>
             </div>
           </div>
           
