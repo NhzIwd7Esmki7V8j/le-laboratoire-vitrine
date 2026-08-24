@@ -26,11 +26,6 @@ const admins = [
     handle: "@lelabo09",
     url: "https://t.me/lelabo09",
   },
-  {
-    name: "Le Labo",
-    handle: "@moderateur1labo",
-    url: "https://t.me/moderateur1labo",
-  },
 ]
 
 export function ContactModal({ children }: ContactModalProps) {

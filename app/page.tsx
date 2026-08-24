@@ -5,6 +5,7 @@ import { CommunitySection } from "@/components/community-section"
 import { PeptidesSection } from "@/components/peptides-section"
 import { ContactSection } from "@/components/contact-section"
 import { ContactModal } from "@/components/contact-modal"
+import { Reveal } from "@/components/reveal"
 import { Send, Users, MessageCircle, Menu, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -95,13 +96,19 @@ export default function Home() {
       <HeroSection />
 
       {/* Community Section */}
-      <CommunitySection />
+      <Reveal>
+        <CommunitySection />
+      </Reveal>
 
       {/* Peptides Section */}
-      <PeptidesSection />
+      <Reveal>
+        <PeptidesSection />
+      </Reveal>
 
       {/* Contact Section */}
-      <ContactSection />
+      <Reveal>
+        <ContactSection />
+      </Reveal>
 
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
@@ -119,7 +126,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5">
               <span className="text-sm text-slate-400">Nos admins :</span>
               <a 
                 href="https://t.me/Lelabonbz" 
@@ -129,21 +136,13 @@ export default function Home() {
               >
                 @Lelabonbz
               </a>
-              <a 
-                href="https://t.me/lelabo09" 
-                target="_blank" 
+              <a
+                href="https://t.me/lelabo09"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-slate-300 hover:text-sky-400 transition-colors font-mono"
               >
                 @lelabo09
-              </a>
-              <a 
-                href="https://t.me/moderateur1labo" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm text-slate-300 hover:text-sky-400 transition-colors font-mono"
-              >
-                @moderateur1labo
               </a>
             </div>
           </div>

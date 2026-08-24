@@ -15,11 +15,6 @@ const admins = [
     handle: "@lelabo09",
     url: "https://t.me/lelabo09",
   },
-  {
-    name: "Le Labo",
-    handle: "@moderateur1labo",
-    url: "https://t.me/moderateur1labo",
-  },
 ]
 
 export function ContactSection() {
@@ -57,7 +52,7 @@ export function ContactSection() {
         </div>
 
         {/* Admin cards - mis bien en évidence */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 max-w-2xl mx-auto">
           {admins.map((admin) => (
             <a
               key={admin.handle}

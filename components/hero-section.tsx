@@ -79,11 +79,11 @@ export function HeroSection() {
           {/* Logo/Image */}
           <div className="flex-shrink-0">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-violet-600 to-fuchsia-600 rounded-3xl blur-2xl opacity-20 scale-110" />
-              <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dgQoszYy7rINAHw29yFn4Bg1R7SBDN.png" 
-                alt="Le Laboratoire - Peptides de recherche" 
-                className="relative w-72 md:w-96 h-auto drop-shadow-2xl"
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-600 to-fuchsia-600 rounded-3xl blur-2xl scale-110 animate-breathe" />
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dgQoszYy7rINAHw29yFn4Bg1R7SBDN.png"
+                alt="Le Laboratoire - Peptides de recherche"
+                className="relative w-72 md:w-96 h-auto drop-shadow-2xl animate-float-slow"
               />
             </div>
           </div>

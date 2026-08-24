@@ -129,3 +129,41 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* --- Micro-animations (subtiles) --- */
+
+/* Reveal au scroll : fade + léger glissement vers le haut */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Flottement doux du logo hero */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+/* Halo qui "respire" derrière le logo */
+@keyframes breathe {
+  0%, 100% { opacity: 0.18; transform: scale(0.82); }
+  50% { opacity: 0.35; transform: scale(0.9); }
+}
+.animate-breathe {
+  animation: breathe 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .animate-float-slow, .animate-breathe { animation: none; }
+}
